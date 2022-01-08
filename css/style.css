@@ -1,0 +1,396 @@
+@import url(//db.onlinewebfonts.com/c/23f6a3ef666a3eb2b4a69dd71f693343?family=Whitney-Semibold);
+@import url(//db.onlinewebfonts.com/c/62b7ed79de33fd64c1c321a150243237?family=Whitney);
+@import url(//db.onlinewebfonts.com/c/7c52f38b7479048ec565ec764df09f1d?family=WhitneyCondensed);
+
+:root {
+  --primary-color: #11172b;
+  --secondary-color: #e01933;
+  --font-bold: "Whitney";
+  --font-middle: "WhitneyCondensed";
+  --font-thin: "Whitney-Semibold";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Whitney-Semibold";
+  background: white;
+  color: #fff;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-bottom: #333 1px solid;
+  background: var(--primary-color);
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#navbar ul {
+  display: inline-block;
+  list-style: none;
+}
+
+#navbar ul li {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+}
+
+#navbar ul li:nth-child(4) {
+  margin-right: 5rem;
+}
+
+#navbar ul li:nth-child(5),
+#navbar ul li:nth-child(6) {
+  font-family: "Whitney";
+}
+
+#navbar ul li:nth-child(6) {
+  background: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+
+#logo {
+  display: inline-block;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  margin-right: 3rem;
+}
+
+/* Showcase */
+#showcase {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  background: url("../img/hero.jpg") no-repeat center center/cover;
+  height: 500px;
+  font-family: "WhitneyCondensed";
+}
+
+#showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#showcase h2,
+#showcase p {
+  position: relative;
+  margin-left: 6rem;
+}
+
+#showcase h2 {
+  font-size: 7rem;
+}
+
+#showcase h2 span {
+  color: #e5740a;
+}
+
+#showcase p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+#hotlink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: var(--primary-color);
+}
+
+#hotlink ul {
+  list-style: none;
+}
+
+#hotlink ul li {
+  display: inline-block;
+}
+
+#hotlink ul li:not(:last-child) {
+  margin-right: 7rem;
+}
+
+#hotlink ul li i {
+  color: #ccc;
+}
+
+#hotlink ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+/* Content */
+#content {
+  background: #fff;
+  color: #0b1f66;
+}
+
+
+#content .container h3 {
+  text-align: center;
+  padding: 5rem 0 3rem;
+  font-size: 1.5rem;
+  font-family: var(--font-bold);
+}
+
+#content .container > p {
+  text-align: center;
+  font-size: 5rem;
+  font-family: var(--font-thin);
+  padding-bottom: 7rem;
+}
+
+#content .container .card-hor {
+  background: #f6f6f7;
+  position: relative;
+  margin: 5rem 0;
+}
+
+#content .container .card-hor img {
+  width: 30%;
+}
+
+#content .container .card-hor h3{
+  position: absolute;
+  left: 40rem;
+  top: 1rem;
+  font-size: 2rem;
+}
+
+#content .container .card-hor p{
+  position: absolute;
+  left: 40rem;
+  top: 13rem;
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content .container .card-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10rem auto;
+  width: 80%;
+}
+
+#content .container .card-qnas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+#content .container .card-qnas .card-qna {
+  background: #f6f6f7;
+  width: 30%;
+  height: 250px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+#content .container .card-qnas .card-qna h3 {
+  text-align: center;
+  padding: 2rem 0 3rem;
+  font-size: 1.5rem;
+  font-family: var(--font-bold);
+}
+
+#content .container .card-ads {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between
+}
+
+#content .container .card-ads .card-ad {
+  background: #f6f6f7;
+  width: 24%;
+}
+
+#content .container .card-ads .card-ad img {
+  background: center center/cover;
+  width: 100%;
+  height: 360px;
+}
+
+#content .container .card-ads .card-ad h3,
+#content .container .card-ads .card-ad p {
+  
+  font-size: 1.5rem;
+}
+
+#content .container .card-ads .card-ad p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 3rem;
+}
+
+#content .container .sky-miles {
+  position: relative;
+  margin: 5rem 5rem;
+}
+
+
+#content .container .sky-miles h3 {
+  text-align: left;
+}
+
+#content .container .sky-miles p {
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content .container .sky-miles a {
+  position: absolute;
+  left: 80rem;
+  top: 8rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 2px solid #bac5d2;
+  padding: 2rem 8rem;
+}
+
+/* Footer */
+footer{
+  width: 100%;
+  background: var(--primary-color);
+  margin: 5rem 0 0;
+}
+
+.container .search {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.container .search a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding-right: 5rem;
+}
+
+.container .search h3 {
+  font-family: var(--font-thin);
+  font-size: 5rem;
+  text-align: center;
+}
+
+.container .search p {
+  display: inline-block;
+  color: #7d8388;
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+
+.container .site-map {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 5rem 10rem;
+  border-top: 1px solid #7d8388;
+  padding-bottom: 5rem;
+}
+
+.container .site-map ul {
+  font-family: var(--font-bold);
+  list-style: none;
+  color: #7d8388;
+  font-size: 1.5rem;
+  padding-top: 5rem;
+}
+
+.container .site-map ul li:first-child {
+  padding-top: 4rem;
+}
+
+.container .site-map ul li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.container .site-map ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container .copyright {
+  color: #7d8388;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.container .copyright p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container .copyright > a {
+  color: #fff;
+  font-family: var(--font-thin);
+  font-size: 1.5rem;
+  text-decoration: none;
+  line-height: 8rem;
+}
+
+.container .sns {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+
+.container .sns a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0 3rem;
+}
+
+.container .sns a:nth-child(2) {
+  border-left: 1px solid #7d8388;
+  border-right: 1px solid #7d8388;
+}
+
+.container .sns a + i{
+  padding-right: 2rem;
+}
